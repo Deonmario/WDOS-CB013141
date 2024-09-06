@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Pharmacy</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>Pharmacy</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Pharmacy</a></li>
+                </ul> 
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="medicine_section">
+            <div class="Analgesics">
+                <h2>Analgesics</h2>
+                <div class="options_container">
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Paracetamol</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.3.15</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Paracetamol')">-</button>
+                            <input type="text" id="Paracetamol" value="0">
+                            <button onclick="increment('Paracetamol')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Paracetamol', 3.15)">Add to Cart</button>
+                        </div>                           
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Aspirin</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.2.50</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Aspirin')">-</button>
+                            <input type="text" id="Aspirin" value="0">
+                            <button onclick="increment('Aspirin')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Aspirin', 2.50)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Ibuprofen</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.4.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Ibuprofen')">-</button>
+                            <input type="text" id="Ibuprofen" value="0">
+                            <button onclick="increment('Ibuprofen')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Ibuprofen', 4.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Codeine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.5.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Codeine')">-</button>
+                            <input type="text" id="Codeine" value="0">
+                            <button onclick="increment('Codeine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Codeine', 5.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Morphine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.6.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Morphine')">-</button>
+                            <input type="text" id="Morphine" value="0">
+                            <button onclick="increment('Morphine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Morphine', 6.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Tramadol</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.7.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Tramadol')">-</button>
+                            <input type="text" id="Tramadol" value="0">
+                            <button onclick="increment('Tramadol')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Tramadol', 7.00)">Add to Cart</button>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <hr>
+            <div class="Antibiotics">
+                <h2>Antibiotics</h2>
+                <div class="options_container">
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Amoxicillin</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.8.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Amoxicillin')">-</button>
+                            <input type="text" id="Amoxicillin" value="0">
+                            <button onclick="increment('Amoxicillin')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Amoxicillin', 8.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Ciprofloxacin</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.9.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Ciprofloxacin')">-</button>
+                            <input type="text" id="Ciprofloxacin" value="0">
+                            <button onclick="increment('Ciprofloxacin')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Ciprofloxacin', 9.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Clarithromycin</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.10.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Clarithromycin')">-</button>
+                            <input type="text" id="Clarithromycin" value="0">
+                            <button onclick="increment('Clarithromycin')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Clarithromycin', 10.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Azithromycin</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.11.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Azithromycin')">-</button>
+                            <input type="text" id="Azithromycin" value="0">
+                            <button onclick="increment('Azithromycin')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Azithromycin', 11.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Metronidazole</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.12.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Metronidazole')">-</button>
+                            <input type="text" id="Metronidazole" value="0">
+                            <button onclick="increment('Metronidazole')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Metronidazole', 12.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Levofloxacin</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.13.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Levofloxacin')">-</button>
+                            <input type="text" id="Levofloxacin" value="0">
+                            <button onclick="increment('Levofloxacin')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Levofloxacin', 13.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <hr>
+            <div class="Antidepressants">
+                <h2>Antidepressants</h2>
+                <div class="options_container">
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Fluoxetine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.11.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Fluoxetine')">-</button>
+                            <input type="text" id="Fluoxetine" value="0">
+                            <button onclick="increment('Fluoxetine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Fluoxetine', 11.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Sertraline</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.12.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Sertraline')">-</button>
+                            <input type="text" id="Sertraline" value="0">
+                            <button onclick="increment('Sertraline')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Sertraline', 12.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Escitalopram</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.13.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Escitalopram')">-</button>
+                            <input type="text" id="Escitalopram" value="0">
+                            <button onclick="increment('Escitalopram')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Escitalopram', 13.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Paroxetine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.14.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Paroxetine')">-</button>
+                            <input type="text" id="Paroxetine" value="0">
+                            <button onclick="increment('Paroxetine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Paroxetine', 14.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Fluvoxamine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.15.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Fluvoxamine')">-</button>
+                            <input type="text" id="Fluvoxamine" value="0">
+                            <button onclick="increment('Fluvoxamine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Fluvoxamine', 15.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Venlafaxine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.16.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Venlafaxine')">-</button>
+                            <input type="text" id="Venlafaxine" value="0">
+                            <button onclick="increment('Venlafaxine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Venlafaxine', 16.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="Antihistamines">
+                <h2>Antihistamines</h2>
+                <div class="options_container">
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Cetirizine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.17.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Cetirizine')">-</button>
+                            <input type="text" id="Cetirizine" value="0">
+                            <button onclick="increment('Cetirizine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Cetirizine', 17.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Loratadine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.18.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Loratadine')">-</button>
+                            <input type="text" id="Loratadine" value="0">
+                            <button onclick="increment('Loratadine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Loratadine', 18.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Fexofenadine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.19.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Fexofenadine')">-</button>
+                            <input type="text" id="Fexofenadine" value="0">
+                            <button onclick="increment('Fexofenadine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Fexofenadine', 19.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Desloratadine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.20.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Desloratadine')">-</button>
+                            <input type="text" id="Desloratadine" value="0">
+                            <button onclick="increment('Desloratadine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Desloratadine', 20.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Clemastine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.21.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Clemastine')">-</button>
+                            <input type="text" id="Clemastine" value="0">
+                            <button onclick="increment('Clemastine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Clemastine', 21.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Levocetirizine</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.22.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Levocetirizine')">-</button>
+                            <input type="text" id="Levocetirizine" value="0">
+                            <button onclick="increment('Levocetirizine')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Levocetirizine', 22.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <hr>
+            <div class="Antihypertensives">
+                <h2>Antihypertensives</h2>
+                <div class="options_container">
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Hydrochlorothiazide</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.23.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Hydrochlorothiazide')">-</button>
+                            <input type="text" id="Hydrochlorothiazide" value="0">
+                            <button onclick="increment('Hydrochlorothiazide')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Hydrochlorothiazide', 23.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Losartan</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.24.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Losartan')">-</button>
+                            <input type="text" id="Losartan" value="0">
+                            <button onclick="increment('Losartan')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Losartan', 24.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Enalapril</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.25.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Enalapril')">-</button>
+                            <input type="text" id="Enalapril" value="0">
+                            <button onclick="increment('Enalapril')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Enalapril', 25.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Atenolol</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.26.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Atenolol')">-</button>
+                            <input type="text" id="Atenolol" value="0">
+                            <button onclick="increment('Atenolol')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Atenolol', 26.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Metoprolol</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.27.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Metoprolol')">-</button>
+                            <input type="text" id="Metoprolol" value="0">
+                            <button onclick="increment('Metoprolol')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Metoprolol', 27.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="topic">
+                            <h3>Propranolol</h3>
+                        </div>
+                        <div class="price">
+                            <p>Rs.28.00</p>
+                        </div>
+                        <div class="quantity">
+                            <button onclick="decrement('Propranolol')">-</button>
+                            <input type="text" id="Propranolol" value="0">
+                            <button onclick="increment('Propranolol')">+</button>
+                        </div>
+                        <div class="atc">
+                            <button onclick="add_to_cart('Propranolol', 28.00)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Price (LKR)</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody class="cart_items">
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td class="total">0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="checkout">
+            <button onclick="checkout()"><a href="/booking.html">Buy Now</a></button>
+            <button onclick="AddtoFavorite()">Add to Favorite</button>
+            <button onclick="ApplyFavorite()">Apply Favorite</button>
+        </div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+header{
+    background-color: #572121;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #572121;
+    }
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+.option{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+.option h3{
+    width: 200px;
+}
+.option p{
+    width: 200px;
+}
+.option .quantity{
+    width: 300px;
+    
+}
+.option .quantity button{
+    background-color: #572121;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.option .quantity button:hover{
+    background-color: #7f3d3d;
+}
+
+.option .quantity input{
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #572121;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+.option .quantity input:focus{
+    outline: none;
+}
+
+.atc button{
+    background-color: #572121;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.atc button:hover{
+    background-color: #7f3d3d;
+}
+
+.cart_table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart_table table th{
+    background-color: #572121;
+    color: white;
+    padding: 10px;
+}
+.cart_table table td{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #572121;
+}
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.checkout button{
+    background-color: #572121;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.checkout button:hover{
+    background-color: #7f3d3d;
+}
+.checkout a{
+    text-decoration: none;
+    color: white;
+    background-color: #572121;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.checkout a:hover{
+    background-color: #7f3d3d;
+}
